@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>daniel riley quiz app</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,18 +12,74 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/54ca617563.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <header><h1>Quiz App</h1></header>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <section class="main_section">
+      <section class="question_card">
+        <button class="bookmark" href="bookmark.html">
+          <i class="fa-solid fa-bookmark fa-3x"></i>
+        </button>
+        <p class="question">
+          If you dug a hole through the centre of the earth starting from Spain,
+          which HTML tag would make your digging easier?
+        </p>
+        <button class="answer">Answer</button>
+        <div class="tags">
+          <button class="tag">HTML</button>
+          <button class="tag">CSS</button>
+          <button class="tag">JavaScript</button>
+        </div>
+      </section>
+
+      <section class="question_card">
+        <p class="question">
+          Assuming you dug in a straight line, you've probaly ended up, upside
+          down, in New Zealand. What CSS property will flip you back round?
+        </p>
+        <button class="answer">Answer</button>
+        <div class="tags">
+          <button class="tag">HTML</button>
+          <button class="tag">CSS</button>
+          <button class="tag">JavaScript</button>
+        </div>
+      </section>
+
+      <section class="question_card">
+        <p class="question">
+          You're parched from your digging, but are not able to order a nice
+          cold H2O. Which JavaScript function will break the language barrier?
+        </p>
+        <button class="answer">Answer</button>
+        <div class="tags">
+          <button class="tag">HTML</button>
+          <button class="tag">CSS</button>
+          <button class="tag">JavaScript</button>
+        </div>
+      </section>
+    </section>
 
     <footer>
       <nav>
-        <ul>
-          <li><a href="index.html">homepage</a></li>
-          <li><a href="bookmark.html">bookmark</a></li>
-          <li><a href="profile.html">profile</a></li>
-        </ul>
+        <a class="active" href="images/bookmark.png">
+          <i class="fa-solid fa-house fa-2x"></i>
+        </a>
+
+        <a href="bookmark.html">
+          <i class="fa-solid fa-bookmark fa-2x"></i>
+        </a>
+
+        <a href="profile.html">
+          <i class="fa-solid fa-user fa-2x"></i>
+        </a>
       </nav>
     </footer>
   </body>
