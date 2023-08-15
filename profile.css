@@ -23,7 +23,7 @@ header {
   font-style: italic;
 }
 
-.main_section {
+.contact_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ header {
   padding: 0 20px 0 20px;
 }
 
-.question_card {
+.info_card {
   display: flex;
   flex-direction: column;
   background-color: #c8b9ff;
@@ -45,21 +45,15 @@ header {
   box-shadow: 0px 5px #000;
 }
 
+.connie {
+  border-radius: 30px;
+}
+
 .question {
   display: flex;
   color: #000;
-  font-weight: 600;
-  font-size: 1.25em;
-}
-
-.bookmark {
-  display: flex;
-  background-color: #c8b9ff;
-  color: #000;
-  position: absolute;
-  align-items: flex-end;
-  top: -15px;
-  right: -10px;
+  font-weight: 300;
+  font-size: 1em;
 }
 
 button {
@@ -69,7 +63,7 @@ button {
   border-radius: 10px;
   box-shadow: 0px 3px #000;
   font-weight: 300;
-  color: #ffffff;
+  color: #000;
 }
 
 .tags {
