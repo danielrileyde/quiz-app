@@ -82,7 +82,6 @@ button {
 .tags {
   display: flex;
   align-self: flex-start;
-
   gap: 10px;
 }
 
