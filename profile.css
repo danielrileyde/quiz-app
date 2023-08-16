@@ -109,6 +109,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   max-width: 450px;
+  padding: 30px;
 }
 
 .active {
