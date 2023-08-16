@@ -23,6 +23,10 @@ header {
   font-style: italic;
 }
 
+header h1 {
+  text-shadow: 0 0 2px black;
+}
+
 .contact_card {
   display: flex;
   flex-direction: column;
@@ -110,4 +114,5 @@ nav {
 
 a {
   color: #fcc701;
+  text-shadow: 0 0 2px black;
 }

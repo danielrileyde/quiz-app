@@ -23,6 +23,10 @@ header {
   font-style: italic;
 }
 
+header h1 {
+  text-shadow: 0 0 2px black;
+}
+
 .main_section {
   display: flex;
   flex-direction: column;
@@ -116,4 +120,5 @@ nav {
 
 a {
   color: #fcc701;
+  text-shadow: 0 0 2px black;
 }
