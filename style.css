@@ -28,7 +28,7 @@ header h1 {
   text-shadow: 0 0 2px black;
 }
 
-.main_section {
+.main--section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@ header h1 {
   max-width: 450px;
 }
 
-.question_card {
+.question--card {
   display: flex;
   flex-direction: column;
   background-color: #c8b9ff;
@@ -52,30 +52,49 @@ header h1 {
   margin: auto;
 }
 
+.new-cards {
+  width: 100%;
+}
+
 .question {
   display: flex;
   color: #000;
   font-weight: 600;
   font-size: 1.25em;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .bookmark {
-  display: flex;
-  background-color: #c8b9ff;
-  color: #000;
+  background: none;
+  border: none;
+  box-shadow: none;
   position: absolute;
   align-items: flex-end;
-  top: -15px;
-  right: -10px;
+  top: -10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* .bookmarkIcon {
+  fill: yellow;
+  opacity: 0.4;
+} */
+
+.bookmarkIcon.active {
+  fill: none;
+  opacity: 1;
 }
 
 button {
-  display: flex;
-  border: 1px solid #000000;
-  background-color: #2fa957;
   border-radius: 10px;
   box-shadow: 0px 3px #000;
-  font-weight: 300;
+  border: 1px solid black;
+}
+
+.button--answer {
+  background-color: #2fa957;
+  font-weight: 200;
   color: #ffffff;
 }
 
@@ -83,13 +102,16 @@ button {
   display: flex;
   align-self: flex-start;
   gap: 10px;
+  margin-top: 16px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .tags .tag:nth-child(n + 2) {
   margin-left: 15px;
 }
 
-.tag {
+.button--tag {
   background-color: #f24e1e;
   color: #000000;
   font-weight: 100;
@@ -124,4 +146,40 @@ nav {
 a {
   color: #fcc701;
   text-shadow: 0 0 2px black;
+}
+
+.form__charcater-count {
+  float: right;
+  font-size: 0.8757rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #000;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #2fa957;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.fieldset {
+  border: 1px solid black;
+}
+
+.form--submit {
+  margin-top: 20px;
+}
+
+.tag--imput {
+  margin-top: 20px;
+}
+
+.your--question {
+  margin-bottom: 20px;
 }

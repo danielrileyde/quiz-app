@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/54ca617563.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js" defer></script>
   </head>
 
   <body>
@@ -23,46 +24,71 @@
       <h1>No Eye Dear</h1>
     </header>
 
-    <section class="main_section">
-      <section class="question_card">
-        <button class="bookmark" href="/bookmarks.html">
-          <i class="fa-solid fa-bookmark fa-3x"></i>
+    <section data-js="main" class="main--section">
+      <section class="question--card">
+        <button data-js="bookmark" class="bookmark" href="/bookmarks.html">
+          <!-- <i class="fa-solid fa-bookmark fa-3x"></i> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="46px"
+            height="46px"
+            class="bookmarkIcon"
+            fill="black"
+            stroke="black"
+          >
+            <path
+              d="M 6 2 C 5.861875 2 5.7278809 2.0143848 5.5976562 2.0410156 C 4.686084 2.2274316 4 3.033125 4 4 L 4 22 L 12 19 L 20 22 L 20 4 C 20 3.8625 19.985742 3.7275391 19.95884 3.5976562 C 19.799199 2.8163086 19.183691 2.2008008 18.402344 2.0410156 C 18.272119 2.0143848 18.138125 2 18 2 L 6 2 z"
+            />
+          </svg>
         </button>
-        <p class="question">
-          If you dug a hole through the centre of the earth starting from Spain,
-          which HTML tag would make your digging easier?
-        </p>
-        <button class="answer">Answer</button>
+
+        <div id="question" class="question">
+          <p>
+            If you dug a hole through the centre of the earth starting from
+            Spain, which HTML tag would make your digging easier?
+          </p>
+        </div>
+        <button
+          onclick="toggleAnswer(); switchTitle()"
+          ;
+          data-js="button-title"
+          class="button--answer"
+          id="button-answer"
+        >
+          Show Answer
+        </button>
+
         <div class="tags">
-          <button class="tag">HTML</button>
-          <button class="tag">CSS</button>
-          <button class="tag">JavaScript</button>
+          <button class="button--tag">HTML</button>
+          <button class="button--tag">CSS</button>
+          <button class="button--tag">JavaScript</button>
         </div>
       </section>
 
-      <section class="question_card">
+      <section class="question--card">
         <p class="question">
           Assuming you dug in a straight line, you've probaly ended up, upside
           down, in New Zealand. What CSS property will flip you back round?
         </p>
-        <button class="answer">Answer</button>
+        <button class="button--answer">Show Answer</button>
         <div class="tags">
-          <button class="tag">HTML</button>
-          <button class="tag">CSS</button>
-          <button class="tag">JavaScript</button>
+          <button class="button--tag">HTML</button>
+          <button class="button--tag">CSS</button>
+          <button class="button--tag">JavaScript</button>
         </div>
       </section>
 
-      <section class="question_card">
+      <section class="question--card">
         <p class="question">
           You're parched from your digging, but are not able to order a nice
           cold H2O. Which JavaScript function will break the language barrier?
         </p>
-        <button class="answer">Answer</button>
+        <button class="button--answer">Show Answer</button>
         <div class="tags">
-          <button class="tag">HTML</button>
-          <button class="tag">CSS</button>
-          <button class="tag">JavaScript</button>
+          <button class="button--tag">HTML</button>
+          <button class="button--tag">CSS</button>
+          <button class="button--tag">JavaScript</button>
         </div>
       </section>
     </section>
@@ -75,6 +101,10 @@
 
         <a href="./bookmarks.html">
           <i class="fa-solid fa-bookmark fa-2x"></i>
+        </a>
+
+        <a href="./form.html">
+          <i class="fa-solid fa-plus fa-2x"></i>
         </a>
 
         <a href="./profile.html">
